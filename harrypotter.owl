@@ -1,0 +1,484 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/inès/ontologies/2018/9/harrypotter"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/inès/ontologies/2018/9/harrypotter">
+    <Prefix name="" IRI="http://www.semanticweb.org/inès/ontologies/2018/9/harrypotter#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="untitled-ontology-5" IRI="http://www.semanticweb.org/inès/ontologies/2018/9/untitled-ontology-5#"/>
+    <Declaration>
+        <Class IRI="#AmbitionQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BraveryQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Character"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChivalryQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Creature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CunningQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DaringQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DedicationQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GryffindorQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HardworkQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HarryPotter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HermioneGranger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#House"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HufflepuffQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntelligenceQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KnowledgeQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LoyaltyQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MemberOfGryffindor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MemberOfHufflepuff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MemberOfRavenclaw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MemberOfSlytherin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muggle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NamedStudent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NerveQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PatienceQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Professor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RavenclawQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RessourcefulnessQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SlytherinQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Staff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WitQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wizard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WizardNotOfHogwarts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WizardOfHogwarts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#doesNotWantToBeIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasQuality"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gryffindor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hufflepuff"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ravenclaw"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Slytherin"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#House"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Gryffindor"/>
+            <NamedIndividual IRI="#Hufflepuff"/>
+            <NamedIndividual IRI="#Ravenclaw"/>
+            <NamedIndividual IRI="#Slytherin"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MemberOfGryffindor"/>
+        <ObjectIntersectionOf>
+            <ObjectComplementOf>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#doesNotWantToBeIn"/>
+                    <NamedIndividual IRI="#Gryffindor"/>
+                </ObjectHasValue>
+            </ObjectComplementOf>
+            <ObjectMinCardinality cardinality="2">
+                <ObjectProperty IRI="#hasQuality"/>
+                <Class IRI="#GryffindorQuality"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MemberOfHufflepuff"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="#hasQuality"/>
+            <Class IRI="#HufflepuffQuality"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MemberOfRavenclaw"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="#hasQuality"/>
+            <Class IRI="#RavenclawQuality"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MemberOfSlytherin"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="#hasQuality"/>
+            <Class IRI="#SlytherinQuality"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AmbitionQuality"/>
+        <Class IRI="#SlytherinQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Animal"/>
+        <Class IRI="#Character"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BraveryQuality"/>
+        <Class IRI="#GryffindorQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChivalryQuality"/>
+        <Class IRI="#GryffindorQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Creature"/>
+        <Class IRI="#Character"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CunningQuality"/>
+        <Class IRI="#SlytherinQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DaringQuality"/>
+        <Class IRI="#GryffindorQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DedicationQuality"/>
+        <Class IRI="#HufflepuffQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GryffindorQuality"/>
+        <Class IRI="#Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HardworkQuality"/>
+        <Class IRI="#HufflepuffQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HarryPotter"/>
+        <Class IRI="#NamedStudent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HarryPotter"/>
+        <ObjectComplementOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#doesNotWantToBeIn"/>
+                <NamedIndividual IRI="#Gryffindor"/>
+            </ObjectHasValue>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HarryPotter"/>
+        <ObjectComplementOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#doesNotWantToBeIn"/>
+                <NamedIndividual IRI="#Hufflepuff"/>
+            </ObjectHasValue>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HarryPotter"/>
+        <ObjectComplementOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#doesNotWantToBeIn"/>
+                <NamedIndividual IRI="#Ravenclaw"/>
+            </ObjectHasValue>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HarryPotter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasQuality"/>
+            <Class IRI="#BraveryQuality"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HarryPotter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasQuality"/>
+            <Class IRI="#ChivalryQuality"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HarryPotter"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#doesNotWantToBeIn"/>
+            <NamedIndividual IRI="#Slytherin"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HermioneGranger"/>
+        <Class IRI="#NamedStudent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HermioneGranger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasQuality"/>
+            <Class IRI="#AmbitionQuality"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HermioneGranger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasQuality"/>
+            <Class IRI="#DaringQuality"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HermioneGranger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasQuality"/>
+            <Class IRI="#NerveQuality"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HufflepuffQuality"/>
+        <Class IRI="#Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human"/>
+        <Class IRI="#Character"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntelligenceQuality"/>
+        <Class IRI="#RavenclawQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KnowledgeQuality"/>
+        <Class IRI="#RavenclawQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LoyaltyQuality"/>
+        <Class IRI="#HufflepuffQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MemberOfGryffindor"/>
+        <Class IRI="#Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MemberOfHufflepuff"/>
+        <Class IRI="#Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MemberOfRavenclaw"/>
+        <Class IRI="#Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MemberOfSlytherin"/>
+        <Class IRI="#Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Muggle"/>
+        <Class IRI="#Human"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NamedStudent"/>
+        <Class IRI="#Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NerveQuality"/>
+        <Class IRI="#GryffindorQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PatienceQuality"/>
+        <Class IRI="#HufflepuffQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Professor"/>
+        <Class IRI="#WizardOfHogwarts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RavenclawQuality"/>
+        <Class IRI="#Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RessourcefulnessQuality"/>
+        <Class IRI="#SlytherinQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SlytherinQuality"/>
+        <Class IRI="#Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Staff"/>
+        <Class IRI="#WizardOfHogwarts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <Class IRI="#WizardOfHogwarts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WitQuality"/>
+        <Class IRI="#RavenclawQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wizard"/>
+        <Class IRI="#Human"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WizardNotOfHogwarts"/>
+        <Class IRI="#Wizard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WizardOfHogwarts"/>
+        <Class IRI="#Wizard"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AmbitionQuality"/>
+        <Class IRI="#CunningQuality"/>
+        <Class IRI="#RessourcefulnessQuality"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Animal"/>
+        <Class IRI="#Creature"/>
+        <Class IRI="#Human"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BraveryQuality"/>
+        <Class IRI="#ChivalryQuality"/>
+        <Class IRI="#DaringQuality"/>
+        <Class IRI="#NerveQuality"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DedicationQuality"/>
+        <Class IRI="#HardworkQuality"/>
+        <Class IRI="#LoyaltyQuality"/>
+        <Class IRI="#PatienceQuality"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GryffindorQuality"/>
+        <Class IRI="#HufflepuffQuality"/>
+        <Class IRI="#RavenclawQuality"/>
+        <Class IRI="#SlytherinQuality"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IntelligenceQuality"/>
+        <Class IRI="#KnowledgeQuality"/>
+        <Class IRI="#WitQuality"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Muggle"/>
+        <Class IRI="#Wizard"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Professor"/>
+        <Class IRI="#Staff"/>
+        <Class IRI="#Student"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#WizardNotOfHogwarts"/>
+        <Class IRI="#WizardOfHogwarts"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#House"/>
+        <NamedIndividual IRI="#Gryffindor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#House"/>
+        <NamedIndividual IRI="#Hufflepuff"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#House"/>
+        <NamedIndividual IRI="#Ravenclaw"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#House"/>
+        <NamedIndividual IRI="#Slytherin"/>
+    </ClassAssertion>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#doesNotWantToBeIn"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#doesNotWantToBeIn"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasQuality"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasQuality"/>
+        <Class IRI="#Quality"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
