@@ -101,7 +101,7 @@
         <Class IRI="#IntelligenceQuality"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#InternationalMagiccooperationDepartment"/>
+        <Class IRI="#InternationalMagicCooperationDepartment"/>
     </Declaration>
     <Declaration>
         <Class IRI="#KnowledgeQuality"/>
@@ -209,7 +209,7 @@
         <Class IRI="#RegulationOfMagicalCreaturesDepartment"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#RessourcefulnessQuality"/>
+        <Class IRI="#ResourcefulnessQuality"/>
     </Declaration>
     <Declaration>
         <Class IRI="#RiddleHouse"/>
@@ -426,6 +426,13 @@
         <Class IRI="#WizardNotOfHogwarts"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#DeathEater"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isAnEnemyOf"/>
+            <Class IRI="#OrderOfThePhoenix"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#DeathEathersLocation"/>
         <Class IRI="#Location"/>
     </SubClassOf>
@@ -515,6 +522,20 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HarryPotter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasQuality"/>
+            <Class IRI="#CunningQuality"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HarryPotter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasQuality"/>
+            <Class IRI="#ResourcefulnessQuality"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HarryPotter"/>
         <ObjectHasValue>
             <ObjectProperty IRI="#doesNotWantToBeIn"/>
             <NamedIndividual IRI="#Slytherin"/>
@@ -531,6 +552,42 @@
     <SubClassOf>
         <Class IRI="#HermioneGranger"/>
         <Class IRI="#NamedStudent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HermioneGranger"/>
+        <ObjectComplementOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#doesNotWantToBeIn"/>
+                <NamedIndividual IRI="#Gryffindor"/>
+            </ObjectHasValue>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HermioneGranger"/>
+        <ObjectComplementOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#doesNotWantToBeIn"/>
+                <NamedIndividual IRI="#Hufflepuff"/>
+            </ObjectHasValue>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HermioneGranger"/>
+        <ObjectComplementOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#doesNotWantToBeIn"/>
+                <NamedIndividual IRI="#Ravenclaw"/>
+            </ObjectHasValue>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HermioneGranger"/>
+        <ObjectComplementOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#doesNotWantToBeIn"/>
+                <NamedIndividual IRI="#Slytherin"/>
+            </ObjectHasValue>
+        </ObjectComplementOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#HermioneGranger"/>
@@ -574,7 +631,7 @@
         <Class IRI="#RavenclawQuality"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#InternationalMagiccooperationDepartment"/>
+        <Class IRI="#InternationalMagicCooperationDepartment"/>
         <Class IRI="#MinistryOfMagicDepartment"/>
     </SubClassOf>
     <SubClassOf>
@@ -696,6 +753,13 @@
         <Class IRI="#WizardNotOfHogwarts"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#OrderOfThePhoenix"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isAnEnemyOf"/>
+            <Class IRI="#DeathEater"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#OrderOfThePhonixLocation"/>
         <Class IRI="#Location"/>
     </SubClassOf>
@@ -724,7 +788,7 @@
         <Class IRI="#MinistryOfMagicDepartment"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#RessourcefulnessQuality"/>
+        <Class IRI="#ResourcefulnessQuality"/>
         <Class IRI="#SlytherinQuality"/>
     </SubClassOf>
     <SubClassOf>
@@ -847,7 +911,7 @@
     <DisjointClasses>
         <Class IRI="#AmbitionQuality"/>
         <Class IRI="#CunningQuality"/>
-        <Class IRI="#RessourcefulnessQuality"/>
+        <Class IRI="#ResourcefulnessQuality"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Animal"/>
@@ -939,7 +1003,7 @@
         <Class IRI="#WitQuality"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#InternationalMagiccooperationDepartment"/>
+        <Class IRI="#InternationalMagicCooperationDepartment"/>
         <Class IRI="#MagicalAccidentsDepartment"/>
         <Class IRI="#MagicalGamesDepartment"/>
         <Class IRI="#MagicalLawEnforcmentDepartment"/>
@@ -1060,8 +1124,38 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DefenceAgainstDarkArtsProfessor</IRI>
+        <Literal>Professor for study of spells</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GamekeeperStaff</IRI>
+        <Literal>Wizards employed by Hogwarts to tend to and look after the grounds of the school, as well as the security of Hogwarts Castle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HerbologyProfessor</IRI>
+        <Literal>Professor for the study of magical plants and their usage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HogwartsExpressStaff</IRI>
+        <Literal>Staff in charge of the transportation of the student from London to Hogwarts castle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#HogwartsLocation</IRI>
         <Literal>Locations that refer to Hogwarts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#House</IRI>
+        <Literal>House instances used for the reasoner.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HufflepuffQuality</IRI>
+        <Literal>Qualities assigned to the house Gryffindor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1070,8 +1164,73 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InternationalMagicCooperationDepartment</IRI>
+        <Literal>Department in charge of magical cooperation between countries</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Location</IRI>
         <Literal>This object describes Locations in the univers of Harry Potter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MagicalAccidentsDepartment</IRI>
+        <Literal>Department in charge of Magical accidents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MagicalGamesDepartment</IRI>
+        <Literal>Department in charge of magical sports ,such as Quidditch</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MagicalLawEnforcmentDepartment</IRI>
+        <Literal>Department in charge of enforcing the magical law</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MagicalTransportationDepartment</IRI>
+        <Literal>Department in charge of magical transportation means</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MemberOfGryffindorStudent</IRI>
+        <Literal>This object aims at gathering the students belongin to the house Gryffindor. It is a defined class, if a student that has at least 2 qualities of the house, and not the proterty doesNotWantToBeIn this house, it is infered as a member of the house.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MemberOfHufflepuffStudent</IRI>
+        <Literal>This object aims at gathering the students belongin to the house Hufflepuff. It is a defined class, if a student that has at least 2 qualities of the house, and not the proterty doesNotWantToBeIn this house, it is infered as a member of the house.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MemberOfRavenclawStudent</IRI>
+        <Literal>This object aims at gathering the students belongin to the house Ravenclaw. It is a defined class, if a student that has at least 2 qualities of the house, and not the proterty doesNotWantToBeIn this house, it is infered as a member of the house.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MemberOfSlytherinStudent</IRI>
+        <Literal>This object aims at gathering the students belongin to the house Slytherin. It is a defined class, if a student that has at least 2 qualities of the house, and not the proterty doesNotWantToBeIn this house, it is infered as a member of the house.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MinistryOfMagic</IRI>
+        <Literal>The ministry in charge of magical regulations in the univers of Harrry Potter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MinistryOfMagicCommittee</IRI>
+        <Literal>Smaller divisions of the ministry of magic, in charge of various, specific tasks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MinistryOfMagicDepartment</IRI>
+        <Literal>Departments of the ministry of magic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MinistryOfMagicOtherStaff</IRI>
+        <Literal>Chief, or other staff members of the ministry of magic</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1085,8 +1244,48 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OrderOfThePhoenix</IRI>
+        <Literal>The secret society founded by Albus Dumbledore</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#OrderOfThePhonixLocation</IRI>
         <Literal>Locations used by the order of the phoenix</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PotionsProfessor</IRI>
+        <Literal>Professor for creation of potions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Professor</IRI>
+        <Literal>Professors in hogwarts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Quality</IRI>
+        <Literal>Quality objects used for the reasoner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RavenclawQuality</IRI>
+        <Literal>Qualities assigned to the house Gryffindor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RegulationOfMagicalCreaturesDepartment</IRI>
+        <Literal>Department in charge of regulating the usage of magical creatures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SlytherinQuality</IRI>
+        <Literal>Qualities assigned to the house Gryffindor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TransfigurationProfessor</IRI>
+        <Literal>Professor for transfiguration</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1097,6 +1296,41 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#WizardNotOfHogwarts</IRI>
         <Literal>Wizards that are not students or staff at Hogwarts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WizardOfHogwarts</IRI>
+        <Literal>Wizards living in hogwarts, including students, professors, and staff members</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#doesNotWantToBeIn</IRI>
+        <Literal>Describes if a student does not want to be in a given house</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasQuality</IRI>
+        <Literal>describes if a character has a given quality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isAnAllyOf</IRI>
+        <Literal>Describes what entity an character fights with</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isAnEnemyOf</IRI>
+        <Literal>Describes what entity a character fights against</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isHeadOfHouse</IRI>
+        <Literal>Describes what house a student is head of, if he is</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isUsedBy</IRI>
+        <Literal>Describes what entity uses a given location</Literal>
     </AnnotationAssertion>
 </Ontology>
 
