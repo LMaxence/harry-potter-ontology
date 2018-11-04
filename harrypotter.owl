@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/inès/ontologies/2018/9/harrypotter">
-    <Prefix name="" IRI="http://www.semanticweb.org/inès/ontologies/2018/9/harrypotter#"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/inès/ontologies/2018/9/harrypotter"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -23,6 +23,9 @@
         <Class IRI="#BraveryQuality"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#CaveNearHogsmeade"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Character"/>
     </Declaration>
     <Declaration>
@@ -38,7 +41,28 @@
         <Class IRI="#DaringQuality"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#DeathEater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeathEathersLocation"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#DedicationQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DefenceAgainstDarkArtsProfessor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExperimentalCharmsCommitee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FirstOrderOfThePhoenix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ForbiddenForest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GamekeeperStaff"/>
     </Declaration>
     <Declaration>
         <Class IRI="#GryffindorQuality"/>
@@ -50,7 +74,19 @@
         <Class IRI="#HarryPotter"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#HeadmasterStaff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HerbologyProfessor"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#HermioneGranger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HogwartsExpressStaff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HogwartsLocation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#House"/>
@@ -65,25 +101,79 @@
         <Class IRI="#IntelligenceQuality"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#InternationalMagiccooperationDepartment"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#KnowledgeQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LestrangeVault"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
     </Declaration>
     <Declaration>
         <Class IRI="#LoyaltyQuality"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MemberOfGryffindor"/>
+        <Class IRI="#MagicalAccidentsDepartment"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MemberOfHufflepuff"/>
+        <Class IRI="#MagicalGamesDepartment"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MemberOfRavenclaw"/>
+        <Class IRI="#MagicalLawEnforcmentDepartment"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MemberOfSlytherin"/>
+        <Class IRI="#MagicalMaintenanceDepartment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MagicalTransportationDepartment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MalfoyManor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MedicalStaff"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MemberOfGryffindorStudent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MemberOfHufflepuffStudent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MemberOfRavenclawStudent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MemberOfSlytherinStudent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinistryOfMagic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinistryOfMagicCommittee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinistryOfMagicDepartment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinistryOfMagicOtherStaff"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Muggle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MysteriesDepartment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NamedLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NamedProfessor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NamedStaff"/>
     </Declaration>
     <Declaration>
         <Class IRI="#NamedStudent"/>
@@ -92,7 +182,19 @@
         <Class IRI="#NerveQuality"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#OrderOfThePhoenix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrderOfThePhonixLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherStaff"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#PatienceQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PotionsProfessor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Professor"/>
@@ -104,16 +206,43 @@
         <Class IRI="#RavenclawQuality"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#RegulationOfMagicalCreaturesDepartment"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#RessourcefulnessQuality"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#RiddleHouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecondOrderOfThePhoenix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShellCottage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShriekingShack"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#SlytherinQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpinnersEnd"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Staff"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TheBurrow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransfigurationProfessor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TronksHouse"/>
     </Declaration>
     <Declaration>
         <Class IRI="#WitQuality"/>
@@ -128,10 +257,28 @@
         <Class IRI="#WizardOfHogwarts"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#WizardingExaminationCommitee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#12GrimmauldPlace"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#doesNotWantToBeIn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasQuality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAnAllyOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAnEnemyOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isHeadOfHouse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isUsedBy"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Gryffindor"/>
@@ -146,6 +293,20 @@
         <NamedIndividual IRI="#Slytherin"/>
     </Declaration>
     <EquivalentClasses>
+        <Class IRI="#DeathEathersLocation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isUsedBy"/>
+            <Class IRI="#DeathEater"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HogwartsLocation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isUsedBy"/>
+            <Class IRI="#WizardOfHogwarts"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#House"/>
         <ObjectOneOf>
             <NamedIndividual IRI="#Gryffindor"/>
@@ -155,7 +316,7 @@
         </ObjectOneOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#MemberOfGryffindor"/>
+        <Class IRI="#MemberOfGryffindorStudent"/>
         <ObjectIntersectionOf>
             <ObjectComplementOf>
                 <ObjectHasValue>
@@ -170,25 +331,56 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#MemberOfHufflepuff"/>
-        <ObjectMinCardinality cardinality="2">
-            <ObjectProperty IRI="#hasQuality"/>
-            <Class IRI="#HufflepuffQuality"/>
-        </ObjectMinCardinality>
+        <Class IRI="#MemberOfHufflepuffStudent"/>
+        <ObjectIntersectionOf>
+            <ObjectComplementOf>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#doesNotWantToBeIn"/>
+                    <NamedIndividual IRI="#Hufflepuff"/>
+                </ObjectHasValue>
+            </ObjectComplementOf>
+            <ObjectMinCardinality cardinality="2">
+                <ObjectProperty IRI="#hasQuality"/>
+                <Class IRI="#HufflepuffQuality"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#MemberOfRavenclaw"/>
-        <ObjectMinCardinality cardinality="2">
-            <ObjectProperty IRI="#hasQuality"/>
-            <Class IRI="#RavenclawQuality"/>
-        </ObjectMinCardinality>
+        <Class IRI="#MemberOfRavenclawStudent"/>
+        <ObjectIntersectionOf>
+            <ObjectComplementOf>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#doesNotWantToBeIn"/>
+                    <NamedIndividual IRI="#Ravenclaw"/>
+                </ObjectHasValue>
+            </ObjectComplementOf>
+            <ObjectMinCardinality cardinality="2">
+                <ObjectProperty IRI="#hasQuality"/>
+                <Class IRI="#RavenclawQuality"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#MemberOfSlytherin"/>
-        <ObjectMinCardinality cardinality="2">
-            <ObjectProperty IRI="#hasQuality"/>
-            <Class IRI="#SlytherinQuality"/>
-        </ObjectMinCardinality>
+        <Class IRI="#MemberOfSlytherinStudent"/>
+        <ObjectIntersectionOf>
+            <ObjectComplementOf>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#doesNotWantToBeIn"/>
+                    <NamedIndividual IRI="#Slytherin"/>
+                </ObjectHasValue>
+            </ObjectComplementOf>
+            <ObjectMinCardinality cardinality="2">
+                <ObjectProperty IRI="#hasQuality"/>
+                <Class IRI="#SlytherinQuality"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OrderOfThePhonixLocation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isUsedBy"/>
+            <Class IRI="#OrderOfThePhoenix"/>
+        </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#AmbitionQuality"/>
@@ -201,6 +393,17 @@
     <SubClassOf>
         <Class IRI="#BraveryQuality"/>
         <Class IRI="#GryffindorQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CaveNearHogsmeade"/>
+        <Class IRI="#NamedLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CaveNearHogsmeade"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isUsedBy"/>
+            <Class IRI="#OrderOfThePhoenix"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ChivalryQuality"/>
@@ -219,8 +422,43 @@
         <Class IRI="#GryffindorQuality"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#DeathEater"/>
+        <Class IRI="#WizardNotOfHogwarts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeathEathersLocation"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#DedicationQuality"/>
         <Class IRI="#HufflepuffQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DefenceAgainstDarkArtsProfessor"/>
+        <Class IRI="#Professor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExperimentalCharmsCommitee"/>
+        <Class IRI="#MinistryOfMagicCommittee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FirstOrderOfThePhoenix"/>
+        <Class IRI="#OrderOfThePhoenix"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ForbiddenForest"/>
+        <Class IRI="#NamedLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ForbiddenForest"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isUsedBy"/>
+            <Class IRI="#DeathEater"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GamekeeperStaff"/>
+        <Class IRI="#Staff"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GryffindorQuality"/>
@@ -283,6 +521,14 @@
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#HeadmasterStaff"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HerbologyProfessor"/>
+        <Class IRI="#Professor"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#HermioneGranger"/>
         <Class IRI="#NamedStudent"/>
     </SubClassOf>
@@ -308,6 +554,14 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#HogwartsExpressStaff"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HogwartsLocation"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#HufflepuffQuality"/>
         <Class IRI="#Quality"/>
     </SubClassOf>
@@ -320,32 +574,114 @@
         <Class IRI="#RavenclawQuality"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#InternationalMagiccooperationDepartment"/>
+        <Class IRI="#MinistryOfMagicDepartment"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#KnowledgeQuality"/>
         <Class IRI="#RavenclawQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LestrangeVault"/>
+        <Class IRI="#NamedLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LestrangeVault"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isUsedBy"/>
+            <Class IRI="#DeathEater"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LoyaltyQuality"/>
         <Class IRI="#HufflepuffQuality"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MemberOfGryffindor"/>
+        <Class IRI="#MagicalAccidentsDepartment"/>
+        <Class IRI="#MinistryOfMagicDepartment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MagicalGamesDepartment"/>
+        <Class IRI="#MinistryOfMagicDepartment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MagicalLawEnforcmentDepartment"/>
+        <Class IRI="#MinistryOfMagicDepartment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MagicalMaintenanceDepartment"/>
+        <Class IRI="#MinistryOfMagicDepartment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MagicalTransportationDepartment"/>
+        <Class IRI="#MinistryOfMagicDepartment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MalfoyManor"/>
+        <Class IRI="#NamedLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MalfoyManor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isUsedBy"/>
+            <Class IRI="#DeathEater"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MedicalStaff"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MemberOfGryffindorStudent"/>
         <Class IRI="#Student"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MemberOfHufflepuff"/>
+        <Class IRI="#MemberOfHufflepuffStudent"/>
         <Class IRI="#Student"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MemberOfRavenclaw"/>
+        <Class IRI="#MemberOfRavenclawStudent"/>
         <Class IRI="#Student"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MemberOfSlytherin"/>
+        <Class IRI="#MemberOfSlytherinStudent"/>
         <Class IRI="#Student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinistryOfMagic"/>
+        <Class IRI="#WizardNotOfHogwarts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinistryOfMagicCommittee"/>
+        <Class IRI="#MinistryOfMagic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinistryOfMagicDepartment"/>
+        <Class IRI="#MinistryOfMagic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinistryOfMagicOtherStaff"/>
+        <Class IRI="#MinistryOfMagic"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Muggle"/>
         <Class IRI="#Human"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MysteriesDepartment"/>
+        <Class IRI="#MinistryOfMagicDepartment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NamedLocation"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NamedProfessor"/>
+        <Class IRI="#Professor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NamedStaff"/>
+        <Class IRI="#Staff"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NamedStudent"/>
@@ -356,8 +692,24 @@
         <Class IRI="#GryffindorQuality"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#OrderOfThePhoenix"/>
+        <Class IRI="#WizardNotOfHogwarts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrderOfThePhonixLocation"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OtherStaff"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PatienceQuality"/>
         <Class IRI="#HufflepuffQuality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PotionsProfessor"/>
+        <Class IRI="#Professor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Professor"/>
@@ -368,12 +720,64 @@
         <Class IRI="#Quality"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#RegulationOfMagicalCreaturesDepartment"/>
+        <Class IRI="#MinistryOfMagicDepartment"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#RessourcefulnessQuality"/>
         <Class IRI="#SlytherinQuality"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#RiddleHouse"/>
+        <Class IRI="#NamedLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiddleHouse"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isUsedBy"/>
+            <Class IRI="#DeathEater"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecondOrderOfThePhoenix"/>
+        <Class IRI="#OrderOfThePhoenix"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShellCottage"/>
+        <Class IRI="#NamedLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShellCottage"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isUsedBy"/>
+            <Class IRI="#OrderOfThePhoenix"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShriekingShack"/>
+        <Class IRI="#NamedLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShriekingShack"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isUsedBy"/>
+            <Class IRI="#DeathEater"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SlytherinQuality"/>
         <Class IRI="#Quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpinnersEnd"/>
+        <Class IRI="#NamedLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpinnersEnd"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isUsedBy"/>
+            <Class IRI="#DeathEater"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Staff"/>
@@ -382,6 +786,32 @@
     <SubClassOf>
         <Class IRI="#Student"/>
         <Class IRI="#WizardOfHogwarts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TheBurrow"/>
+        <Class IRI="#NamedLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TheBurrow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isUsedBy"/>
+            <Class IRI="#OrderOfThePhoenix"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransfigurationProfessor"/>
+        <Class IRI="#Professor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TronksHouse"/>
+        <Class IRI="#NamedLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TronksHouse"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isUsedBy"/>
+            <Class IRI="#OrderOfThePhoenix"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#WitQuality"/>
@@ -398,6 +828,21 @@
     <SubClassOf>
         <Class IRI="#WizardOfHogwarts"/>
         <Class IRI="#Wizard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WizardingExaminationCommitee"/>
+        <Class IRI="#MinistryOfMagicCommittee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#12GrimmauldPlace"/>
+        <Class IRI="#NamedLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#12GrimmauldPlace"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isUsedBy"/>
+            <Class IRI="#OrderOfThePhoenix"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#AmbitionQuality"/>
@@ -416,10 +861,71 @@
         <Class IRI="#NerveQuality"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#CaveNearHogsmeade"/>
+        <Class IRI="#ForbiddenForest"/>
+        <Class IRI="#LestrangeVault"/>
+        <Class IRI="#MalfoyManor"/>
+        <Class IRI="#RiddleHouse"/>
+        <Class IRI="#ShellCottage"/>
+        <Class IRI="#ShriekingShack"/>
+        <Class IRI="#SpinnersEnd"/>
+        <Class IRI="#TheBurrow"/>
+        <Class IRI="#TronksHouse"/>
+        <Class IRI="#12GrimmauldPlace"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DeathEater"/>
+        <Class IRI="#MinistryOfMagic"/>
+        <Class IRI="#OrderOfThePhoenix"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DeathEathersLocation"/>
+        <Class IRI="#HogwartsLocation"/>
+        <Class IRI="#OrderOfThePhonixLocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#DedicationQuality"/>
         <Class IRI="#HardworkQuality"/>
         <Class IRI="#LoyaltyQuality"/>
         <Class IRI="#PatienceQuality"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DefenceAgainstDarkArtsProfessor"/>
+        <Class IRI="#HerbologyProfessor"/>
+        <Class IRI="#NamedProfessor"/>
+        <Class IRI="#PotionsProfessor"/>
+        <Class IRI="#TransfigurationProfessor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ExperimentalCharmsCommitee"/>
+        <Class IRI="#WizardingExaminationCommitee"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#FirstOrderOfThePhoenix"/>
+        <Class IRI="#SecondOrderOfThePhoenix"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ForbiddenForest"/>
+        <Class IRI="#LestrangeVault"/>
+        <Class IRI="#MalfoyManor"/>
+        <Class IRI="#RiddleHouse"/>
+        <Class IRI="#ShriekingShack"/>
+        <Class IRI="#SpinnersEnd"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GamekeeperStaff"/>
+        <Class IRI="#HeadmasterStaff"/>
+        <Class IRI="#HogwartsExpressStaff"/>
+        <Class IRI="#MedicalStaff"/>
+        <Class IRI="#NamedStaff"/>
+        <Class IRI="#OtherStaff"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GamekeeperStaff"/>
+        <Class IRI="#HeadmasterStaff"/>
+        <Class IRI="#HogwartsExpressStaff"/>
+        <Class IRI="#MedicalStaff"/>
+        <Class IRI="#OtherStaff"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#GryffindorQuality"/>
@@ -431,6 +937,21 @@
         <Class IRI="#IntelligenceQuality"/>
         <Class IRI="#KnowledgeQuality"/>
         <Class IRI="#WitQuality"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#InternationalMagiccooperationDepartment"/>
+        <Class IRI="#MagicalAccidentsDepartment"/>
+        <Class IRI="#MagicalGamesDepartment"/>
+        <Class IRI="#MagicalLawEnforcmentDepartment"/>
+        <Class IRI="#MagicalMaintenanceDepartment"/>
+        <Class IRI="#MagicalTransportationDepartment"/>
+        <Class IRI="#MysteriesDepartment"/>
+        <Class IRI="#RegulationOfMagicalCreaturesDepartment"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MinistryOfMagicCommittee"/>
+        <Class IRI="#MinistryOfMagicDepartment"/>
+        <Class IRI="#MinistryOfMagicOtherStaff"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Muggle"/>
@@ -472,10 +993,111 @@
         <ObjectProperty IRI="#hasQuality"/>
         <Class IRI="#Character"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAnAllyOf"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAnEnemyOf"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isHeadOfHouse"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isUsedBy"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#doesNotWantToBeIn"/>
+        <Class IRI="#House"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasQuality"/>
         <Class IRI="#Quality"/>
     </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAnAllyOf"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAnEnemyOf"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isHeadOfHouse"/>
+        <Class IRI="#House"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isUsedBy"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Animal</IRI>
+        <Literal>Animal characters in the univers of HarryPotter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Character</IRI>
+        <Literal>This section contains character objects. They can be humans or creatures.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Creature</IRI>
+        <Literal>Creatures in the universe of Harry Potter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DeathEater</IRI>
+        <Literal>DeathEater characters, who help Voldemort</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DeathEathersLocation</IRI>
+        <Literal>Locations used by DeathEaters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HogwartsLocation</IRI>
+        <Literal>Locations that refer to Hogwarts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Human</IRI>
+        <Literal>Humans in the universe of Harry Potter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Location</IRI>
+        <Literal>This object describes Locations in the univers of Harry Potter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Muggle</IRI>
+        <Literal>Non-wizard characters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NamedLocation</IRI>
+        <Literal>This section contains locations objects. With property isUsedBy, details about the location are infered.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OrderOfThePhonixLocation</IRI>
+        <Literal>Locations used by the order of the phoenix</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wizard</IRI>
+        <Literal>Characters that can manipulate magic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WizardNotOfHogwarts</IRI>
+        <Literal>Wizards that are not students or staff at Hogwarts</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
